@@ -53,7 +53,7 @@
     align-items: center;
     top: 0;
     height: 10.6667vw /* 80px -> 10.6667vw */;
-    padding: 0 3.3333vw /* 25px -> 3.3333vw */;
+    padding: 0 3.2vw /* 24px -> 3.2vw */;
     background-color: #fff;
     .left-area {
       display: flex;
@@ -98,6 +98,73 @@
       overflow: hidden;
       img {
         width: 100%;
+      }
+    }
+  }
+  .super-subsidy {
+    margin: 0 3.2vw /* 24px -> 3.2vw */;
+    background-color: #fff;
+    border-radius: 3.2vw /* 24px -> 3.2vw */;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 10.6667vw /* 80px -> 10.6667vw */;
+      padding: 0 3.2vw /* 24px -> 3.2vw */;
+      .left-area {
+        display: flex;
+        align-items: center;
+        .super-subsidy-logo {
+          width: 16.6667vw /* 125px -> 16.6667vw */;
+          height: 4.1333vw /* 31px -> 4.1333vw */;
+          margin-right: 1.6vw /* 12px -> 1.6vw */;
+        }
+        .countdown {
+          display: flex;
+          align-items: center;
+          .time, .split {
+            height: 4.1333vw /* 31px -> 4.1333vw */;
+            line-height: 4.1333vw /* 31px -> 4.1333vw */;
+            text-align: center;
+            font-size: @smallFontSize;
+          }
+          .time {
+            width: 4.1333vw /* 31px -> 4.1333vw */;
+            padding: 0 .5333vw /* 4px -> .5333vw */;
+            color: #fff;
+            background-color: @primaryColor;
+            border-radius: .8vw /* 6px -> .8vw */;
+          }
+          .split {
+            width: 2.4vw /* 18px -> 2.4vw */;
+            color: @primaryColor;
+          }
+        }
+      }
+      .right-area {
+        .text-ellipsis();
+        .link-to {
+          position: relative;
+          height: 4.5333vw /* 34px -> 4.5333vw */;
+          line-height: 4.5333vw /* 34px -> 4.5333vw */;
+          padding-right: 2vw /* 15px -> 2vw */;
+          font-size: @smallFontSize;
+          color: @primaryColor;
+          &::after {
+            content: "";
+            position: absolute;
+            top: .4vw /* 3px -> .4vw */;
+            bottom: 0;
+            right: .4vw /* 3px -> .4vw */;
+            margin: auto 0;
+            width: 1.3333vw /* 10px -> 1.3333vw */;
+            height: 1.3333vw /* 10px -> 1.3333vw */;
+            border: .2667vw /* 2px -> .2667vw */ solid @primaryColor;
+            border-left-color: transparent;
+            border-bottom-color: transparent;
+            transform: rotate(45deg);
+          }
+        }
       }
     }
   }
