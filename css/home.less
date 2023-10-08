@@ -174,7 +174,36 @@
         width: 20.9333vw /* 157px -> 20.9333vw */;
         height: 33.3333vw /* 250px -> 33.3333vw */;
         margin: 0 .8vw /* 6px -> .8vw */;
-        background-color: #f00;
+        img {
+          width: 100%;
+          margin-bottom: .8vw /* 6px -> .8vw */;
+        }
+        .price {
+          width: 100%;
+          .super-price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: @primaryColor;
+            .desc, .RMB-tag {
+              font-size: 2.6667vw /* 20px -> 2.6667vw */;
+            }
+            .RMB-tag, .new-price {
+              font-weight: 700;
+            }
+            .new-price {
+              font-size: 4vw /* 30px -> 4vw */;
+            }
+          }
+          .old-price {
+            height: 4.4vw /* 33px -> 4.4vw */;
+            line-height: 4.4vw /* 33px -> 4.4vw */;
+            text-decoration: line-through;
+            text-align: center;
+            font-size: @smallFontSize;
+            color: #999;
+          }
+        }
       }
     }
   }
