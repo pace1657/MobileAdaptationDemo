@@ -56,6 +56,7 @@
     height: 10.6667vw /* 80px -> 10.6667vw */;
     padding: 0 3.2vw /* 24px -> 3.2vw */;
     background-color: #fff;
+    z-index: 999;
     .left-area {
       display: flex;
       flex: 1;
@@ -238,11 +239,15 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 2.1333vw /* 16px -> 2.1333vw */ 2.6667vw /* 20px -> 2.6667vw */;
-    background-color: #ff0;
     .item {
       width: 46.5333vw /* 349px -> 46.5333vw */;
       background-color: #fff;
       border-radius: 1.0667vw /* 8px -> 1.0667vw */;
+      overflow: hidden;
+      img {
+        width: 100%;
+        margin-bottom: 1.6vw /* 12px -> 1.6vw */;
+      }
     }
   }
 }
