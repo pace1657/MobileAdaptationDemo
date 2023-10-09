@@ -244,9 +244,45 @@
       background-color: #fff;
       border-radius: 1.0667vw /* 8px -> 1.0667vw */;
       overflow: hidden;
-      img {
+      .album {
         width: 100%;
         margin-bottom: 1.6vw /* 12px -> 1.6vw */;
+      }
+      .info {
+        padding: 0 2.4vw /* 18px -> 2.4vw */ 1.6vw /* 12px -> 1.6vw */;
+        .country-brand {
+          display: flex;
+          margin-bottom: 1.6vw /* 12px -> 1.6vw */;
+          .country-flag {
+            width: 4vw /* 30px -> 4vw */;
+            height: 4vw /* 30px -> 4vw */;
+            margin-right: 1.6vw /* 12px -> 1.6vw */;
+          }
+          .brand {
+            height: 4vw /* 30px -> 4vw */;
+            line-height: 4vw /* 30px -> 4vw */;
+            font-size: 1.6vw /* 12px -> 1.6vw */;
+            overflow: hidden;
+          }
+        }
+        .desc {
+          height: 9.8667vw /* 74px -> 9.8667vw */;
+          line-height: 4.9333vw /* 37px -> 4.9333vw */;
+          font-size: 13px;
+          color: #333;
+          // 最大显示两行
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          img {
+            position: relative;
+            top: .2667vw /* 2px -> .2667vw */;
+            width: 6.9333vw /* 52px -> 6.9333vw */;
+            height: 3.4667vw /* 26px -> 3.4667vw */;
+            margin-right: .9333vw /* 7px -> .9333vw */;
+          }
+        }
       }
     }
   }
